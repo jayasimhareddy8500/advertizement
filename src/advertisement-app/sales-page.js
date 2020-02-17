@@ -50,7 +50,7 @@ class AdminPage extends PolymerElement {
 </style>
 <div class="container">
     <header>
-        <div id="logo"><h2>Give2Hand<iron-icon icon="all-out"></iron-icon></h2></div>
+    <div id="logo"><h2>WideBroadcast<iron-icon icon="settings-input-antenna"></iron-icon></h2></div>
         <paper-button id="goToHomeBtn" on-click="_handleLogout">LOGOUT<iron-icon icon='settings-power'></iron-icon></paper-button>
     </header>
     <main>
@@ -66,11 +66,19 @@ class AdminPage extends PolymerElement {
 
     static get properties() {
         return {
-
+            userId:{
+                type:Number,
+                value:this.userId,
+                observer:'_userIdChanged'
+            }
         }
     }
 
 
+    _userIdChanged(newVal){
+        console.log(newVal);
+        this._makeAjax(`${}`,'get',null)
+    }
     // _handleResponse(event) {
     //     switch (this.action) {
     //         case 'chart':

@@ -18,7 +18,7 @@ class AdvertisementApp extends PolymerElement {
     <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}"></app-route>     
     <iron-pages selected="[[page]]" attr-for-selected="name" role="main">
       <view404-page name='view404'></view404-page>
-      <sales-page name='sales'></sales-page>
+      <sales-page name='sales' user-id={{userId}}></sales-page>
       <admin-page name='admin'></admin-page>
       <admin-page name='admin' user-id={{userId}}></admin-page>
       <login-page name='login'></login-page>

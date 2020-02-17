@@ -54,7 +54,7 @@ class AdminPage extends PolymerElement {
         <paper-button id="goToHomeBtn" on-click="_handleLogout">LOGOUT<iron-icon icon='settings-power'></iron-icon></paper-button>
     </header>
     <main>
-       
+        <table></table>       
     </main>
 </div>
 <iron-ajax id='ajax' handle-as='json' on-response='_handleResponse' on-error='_handleError' content-type='application/json'></iron-ajax>
@@ -77,7 +77,7 @@ class AdminPage extends PolymerElement {
 
     _userIdChanged(newVal){
         console.log(newVal);
-        this._makeAjax(`${}`,'get',null)
+        // this._makeAjax(`${BaseUrl}/widebroadcast/slots`,'get',null);
     }
     // _handleResponse(event) {
     //     switch (this.action) {

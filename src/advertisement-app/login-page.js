@@ -23,8 +23,8 @@ class LoginPage extends PolymerElement {
             }
             header{
                 grid-area:header;
-                background-color:rgba(255,255,255,0.9);
-                color:black;
+                background-color:rgba(0,0,0,0.6);
+                color:white;
                 display:grid;
                 grid-template-rows:1fr;
                 grid-template-columns:1fr 1fr 1fr;
@@ -45,7 +45,7 @@ class LoginPage extends PolymerElement {
                 background-color:red;
             }
             #loginForm{
-                margin-top:80px;
+                margin-top:120px;
                 grid-area:form;
                 background-color: rgba(255,255,255,0.9);
                 border-radius:5px;

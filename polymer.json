@@ -22,15 +22,7 @@
   "moduleResolution": "node",
   "builds": [
     {
-      "preset": "es5-bundled",
-      "addServiceWorker": true
-    },
-    {
       "preset": "es6-unbundled",
-      "addServiceWorker": true
-    },
-    {
-      "preset": "es6-bundled",
       "addServiceWorker": true
     }
   ],
